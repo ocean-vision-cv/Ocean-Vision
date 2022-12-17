@@ -1,15 +1,14 @@
 
 :root{
   --white:#FFFFFF;
-  --dark-grey:#181818;
   --light-gray:#8C8C8C;
-  --green:#03F747;
+  --blue:#00487C;
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto';
 }
 html,
 body,
