@@ -1,19 +1,28 @@
 .viewer{
-    width: 90vw;
+    width: 100vw;
     height: 90vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.viewer p{
-    color: white;
+.quote-container{
+    width: 50rem;
+    height: 10rem;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-
+.quote-svg{
+    width: 50vw;
+    max-width: 50rem;
+}
 .icon{
     position: absolute;
-    right: 50%;
-    bottom: 1.5em;
+    bottom: 0.1%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .frame{
     width: 100%;
