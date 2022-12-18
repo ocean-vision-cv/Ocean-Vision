@@ -14,7 +14,7 @@ const Home = () => {
                 <div className="container-description">
                     <div className="what-description">
                         <h2 className='sub-title'> O Que é ?</h2>
-                        <p> Ocean Vision oferece uma experiência de viagem subaquática de forma virtual, e nesta viagem pode conhecer as diversas espécies marinhas.
+                        <p> Ocean Vision é uma startup que oferece uma experiência de viagem subaquática de forma virtual, e nesta viagem pode conhecer as diversas espécies marinhas.
                             Não uma substituição mas sim uma alternativa ao mergulho real, com <span className='text-highlight'>menos tempo</span> e <span className='text-highlight'>menos custo</span>.
                         </p>
                     </div>
