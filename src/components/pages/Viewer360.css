@@ -9,12 +9,12 @@
     justify-content: center;
 }
 .quote-container{
-    width: 50rem;
-    height: 10rem;
+    max-width: 50rem;
+    max-height: 10rem;
     position: absolute;
     top: 20%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,0%);
 }
 .quote-svg{
     width: 50vw;
