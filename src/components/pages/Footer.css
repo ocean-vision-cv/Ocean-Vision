@@ -82,7 +82,7 @@
 }
 .link{
     text-decoration: none;
-    color:var(--white)
+    color:var(--light-gray);
 }
 
 .link-icon{
@@ -90,7 +90,7 @@
 }
 
 .copyright{
-    color: var(--white);
+    color: var(--light-gray);
     margin-top: 1rem;
     font-size: .8rem;
 }

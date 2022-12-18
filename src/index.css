@@ -8,7 +8,7 @@
 }
 :root{
   --white:#FFFFFF;
-  --light-gray:#8C8C8C;
+  --light-gray:#f5f5f5;
   --blue:#00487C;
 }
 *{
@@ -21,6 +21,6 @@ html,
 body,
 #root{
   height: 100%;
-  background-color: var(--white);
+  background-color: var(--light-gray);
   overflow-x: hidden;
 }
