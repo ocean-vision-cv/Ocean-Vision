@@ -2,11 +2,13 @@
 import './Home.css'
 
 import image from '../../assets/image1.jpg'
+import scroll from '../../assets/scroll.png'
 
 
 const Home = () => {
     return (
         <section className="home">
+            <img src={scroll} alt="scroll" className='scroll-icon' />
             <div className="left-description">
                 <h1 className='description-title'>Ocean Vision</h1>
                 <div className="container-description">

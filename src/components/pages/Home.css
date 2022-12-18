@@ -1,14 +1,16 @@
 .home{
+    margin-top: .5rem;
     width: 100vw;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+
     position: relative;
 }
 
 .left-description{
+    margin-top: 2.5rem;
     width: 50%;
     height: 100%;
     display: flex;
@@ -65,23 +67,12 @@
     height: 90%;
     max-height: 80vh;
 }
-.info {
-	position:relative;
-}
-.info-icon{
-    width: 1.5rem;
-}
-.vr-glass-icon { 
-	position:absolute;
-	visibility:hidden;
-}
-.info:hover, .info:hover .vr-glass-icon { 
-	visibility:visible;
-	top:0;
-	left:100px; 
-	z-index:1;
-}
 
+.scroll-icon{
+    position: absolute;
+    top: 0;
+    width: 3rem;
+}
 
 @media screen and (max-width: 1300px){
     .home{
@@ -114,4 +105,10 @@
     .sub-title{
         font-size: 1.5rem;
     }
+    .scroll-icon{
+        position: absolute;
+        top: 0;
+        width: 2rem;
+    }
+    
 }
