@@ -1,14 +1,12 @@
 .home{
     width: 100vw;
     height: 100vh;
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .about-left{
-    margin-top: 4rem;
     width: 50%;
     height: 100%;
     display: flex;
@@ -22,13 +20,23 @@
     font-family: "Riffic";
     font-size: 4rem;
 }
+.sub-title{
+    color: var(--blue);
+    font-family: "Riffic";
+    font-size: 2rem;
+}
+.text-highlight{
+    color: var(--blue);
+    font-family: "Riffic";
+}
 .about-description{
+    margin-top: 1.5rem;
     display: flex;
     align-items: flex-start;
     justify-self: start;
     flex-direction: column;
     row-gap: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
@@ -65,7 +73,6 @@
         flex-direction: column;
     }
     .about-left{
-        margin-top: 6rem;
         width: 100%;
         height: auto;
     }
@@ -88,5 +95,8 @@
     }
     .image-container img{
         max-height: 50vh;
+    }
+    .sub-title{
+        font-size: 1.5rem;
     }
 }
