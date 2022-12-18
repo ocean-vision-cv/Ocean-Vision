@@ -1,4 +1,11 @@
-
+@font-face {
+  font-family: "Riffic";
+  src: url("./assets/fonts/riffic/RifficFree-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/roboto/Roboto-Regular.ttf");
+}
 :root{
   --white:#FFFFFF;
   --light-gray:#8C8C8C;
