@@ -65,6 +65,23 @@
     height: 90%;
     max-height: 80vh;
 }
+.info {
+	position:relative;
+}
+.info-icon{
+    width: 1.5rem;
+}
+.vr-glass-icon { 
+	position:absolute;
+	visibility:hidden;
+}
+.info:hover, .info:hover .vr-glass-icon { 
+	visibility:visible;
+	top:0;
+	left:100px; 
+	z-index:1;
+}
+
 
 @media screen and (max-width: 1300px){
     .home{

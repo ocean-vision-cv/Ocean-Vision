@@ -4,6 +4,7 @@ import Home from "./components/pages/Home.jsx";
 import About from './components/pages/About';
 import Footer from './components/pages/Footer';
 
+
 function App() {
   return (
     <div className="App">
