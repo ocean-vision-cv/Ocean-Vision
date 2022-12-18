@@ -5,9 +5,9 @@ import image from '../../assets/image1.jpg'
 const Home = () =>{
     return(
         <section className="home">
-            <div className="about-left">
-                <h1 className='about-title'>Ocean Vision</h1>
-                <div className="about-description">
+            <div className="left-description">
+                <h1 className='description-title'>Ocean Vision</h1>
+                <div className="container-description">
                     <div className="what-description">
                         <h2 className='sub-title'> O Que é ?</h2>
                         <p> Ocean Vision oferece uma experiência de viagem subaquática de forma virtual, e nesta viagem pode conhecer as diversas espécies marinhas.
@@ -29,7 +29,7 @@ const Home = () =>{
                     </div>
                 </div>
             </div>
-            <div className="about-right">
+            <div className="right-description">
                 <div className="image-container">
                     <img src={image} alt="description"/>
                 </div>

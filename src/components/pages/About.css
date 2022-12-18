@@ -1,0 +1,30 @@
+.about{
+    margin-top: 5rem;
+    padding: 0 2rem;
+}
+
+.about-title{
+    color: var(--blue);
+    font-family: "Riffic";
+    font-size: 4rem;
+}
+
+.about-description{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-self: start;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    font-size: 1.8rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    text-align: left;
+}
+
+.sub-title{
+    color: var(--blue);
+    font-family: "Riffic";
+    font-size: 2rem;
+}
