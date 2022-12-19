@@ -20,7 +20,7 @@ const Home = () => {
                     </div>
                     <div className="why-description">
                         <h2 className='sub-title'> Porque ?</h2>
-                        <p> No lema <span className='text-highlight'>conhecer para preservar</span> levamos as pessoas a uma <span className='text-highlight'>viagem subaquática</span> para conhecer as espécies marinhas e consciencializar sobre a importância de cada uma.
+                        <p> No lema <span className='text-highlight'>conhecer para preservar</span> levamos as pessoas a uma <span className='text-highlight'>viagem subaquática</span> para conhecer as espécies marinhas, dessa forma acreditamos que a consciencialização é a chave para ajudar na preservação das espécies.
                             Especialmente para as pessoas que <span className='text-highlight'>amam o mar</span> e querem explorar locais novos ou para pessoas que têm <span className='text-highlight'>medo  ou incapacidade</span> de fazer um mergulho real.
                         </p>
                     </div>
