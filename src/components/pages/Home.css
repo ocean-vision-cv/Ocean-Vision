@@ -68,11 +68,11 @@
     max-height: 80vh;
 }
 
-.scroll-icon{
+/* .scroll-icon{
     position: absolute;
     top: 0;
     width: 3rem;
-}
+} */
 
 @media screen and (max-width: 1300px){
     .home{
@@ -105,10 +105,10 @@
     .sub-title{
         font-size: 1.5rem;
     }
-    .scroll-icon{
+    /* .scroll-icon{
         position: absolute;
         top: 0;
         width: 2rem;
-    }
+    } */
     
 }

@@ -2,15 +2,15 @@
 import './Home.css'
 
 import image from '../../assets/image1.jpg'
-import scroll from '../../assets/scroll.png'
+// import scroll from '../../assets/scroll.png'
 
 
 const Home = () => {
     return (
         <section className="home">
-            <img src={scroll} alt="scroll" className='scroll-icon' />
+            {/* <img src={scroll} alt="scroll" className='scroll-icon' /> */}
             <div className="left-description">
-                <h1 className='description-title'>Ocean Vision</h1>
+                <h1 className='description-title' id='home-title'>Ocean Vision</h1>
                 <div className="container-description">
                     <div className="what-description">
                         <h2 className='sub-title'> O Que é ?</h2>
