@@ -1,6 +1,8 @@
 .about{
     margin-top: 5rem;
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-title{
@@ -22,14 +24,25 @@
     hyphens: auto;
     text-align: left;
 }
-
-
-
+.final-quote{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    font-size: 2rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
 @media screen and (max-width: 500px){
     .about-description{
         font-size: 1rem;
     }
     .about-title{
         font-size: 2.5rem;
+    }
+    .final-quote{
+        margin-top: 2rem;
+        margin-bottom: 0;
+        font-size: 1rem;
     }
 }

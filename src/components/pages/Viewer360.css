@@ -19,6 +19,7 @@
 .quote-svg{
     width: 50vw;
     max-width: 50rem;
+    min-width: 20rem;
 }
 .icon{
     position: absolute;

@@ -1,17 +1,17 @@
-import React from 'react'
 import "./Footer.css"
 
-import Instagram from '..//../assets/Instagram.png'
-import Facebook from '..//../assets/Facebook.png'
-import Mail from '..//../assets/Mail.png'
+import Instagram from '..//../assets/images/Instagram.png'
+import Facebook from '..//../assets//images/Facebook.png'
+import Mail from '..//../assets//images/Mail.png'
+
 const Footer = () => {
     return (
         <footer className='footer'>
-            <div class="waves">
-                <div class="wave" id="wave1"></div>
-                <div class="wave" id="wave2"></div>
-                <div class="wave" id="wave3"></div>
-                <div class="wave" id="wave4"></div>
+            <div className="waves">
+                <div className="wave" id="wave1"></div>
+                <div className="wave" id="wave2"></div>
+                <div className="wave" id="wave3"></div>
+                <div className="wave" id="wave4"></div>
             </div>
         <div className="social-links">
             <div className="link-container">
