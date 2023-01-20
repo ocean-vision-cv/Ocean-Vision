@@ -1,0 +1,27 @@
+.events{
+    margin-top: 5rem;
+    padding: 0 17rem;
+    display: flex;
+    flex-direction: column;
+}
+.events-title{
+    color: var(--blue);
+    font-family: "Riffic";
+    font-size: 4rem;
+}
+
+
+@media screen and (max-width: 1300px){
+    .events{
+        padding: 0 5rem;
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 500px){
+    .events{
+        padding: 0 2.2rem;
+    }
+    .events-title{
+        font-size: 2rem;
+    }
+}

@@ -4,6 +4,8 @@
     height: auto;
     display: flex;
     position: relative;
+    padding: 0 15rem;
+    margin-top: 5rem;
 }
 
 .left-description{
@@ -24,7 +26,8 @@
 .sub-title{
     color: var(--blue);
     font-family: "Riffic";
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: .8rem;
 }
 .text-highlight{
     color: var(--blue);
@@ -37,7 +40,7 @@
     justify-self: start;
     flex-direction: column;
     row-gap: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
@@ -50,6 +53,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .image-container{
     width: 90%;
@@ -58,6 +62,7 @@
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    overflow: hidden;
 }
 .image-container img{
     object-fit: cover;
@@ -65,10 +70,29 @@
     height: 90%;
     max-height: 80vh;
 }
+.image-location{
+    position: absolute;
+    bottom: 0%;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: var(--blue);
+    font-family: "Riffic";
+    padding: 1rem;
+    background-color: var(--light-gray);
+    font-size: 1.2rem;
+    transition: .5s;
+    border-radius: 1rem;
+}
+.image-container:hover .image-location{
+    bottom: 5%;
+    opacity: 1;
+}
 
 @media screen and (max-width: 1300px){
     .home{
         flex-direction: column;
+        padding: 0 5rem;
     }
     .left-description{
         width: 100%;
@@ -85,6 +109,10 @@
 }
 
 @media screen and (max-width: 500px){
+    .home{
+        padding: 0 .1rem;
+        margin-top: .5rem;
+    }
     .left-description{
         margin-top: 0;
     }
@@ -92,7 +120,7 @@
         font-size: 1rem;
     }
     .description-title{
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         margin-top: 2.5rem;
     }
     .image-container img{
@@ -100,11 +128,10 @@
     }
     .sub-title{
         font-size: 1.5rem;
+    } 
+    .image-location{
+        font-size: .5rem;
+        padding: .6rem;
+        border-radius: .6rem;
     }
-    /* .scroll-icon{
-        position: absolute;
-        top: 0;
-        width: 2rem;
-    } */
-    
 }
