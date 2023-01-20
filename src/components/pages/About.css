@@ -1,8 +1,9 @@
 .about{
     margin-top: 5rem;
-    padding: 0 2rem;
+    padding: 0 17rem;
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 
 .about-title{
@@ -12,13 +13,13 @@
 }
 
 .about-description{
-    margin-top: 1.5rem;
+    margin-top: .8rem;
     display: flex;
     align-items: flex-start;
     justify-self: start;
     flex-direction: column;
     row-gap: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
@@ -33,12 +34,21 @@
     word-wrap: break-word;
     hyphens: auto;
 }
+@media screen and (max-width: 1300px){
+    .about{
+        padding: 0 5rem;
+    }
+}
 @media screen and (max-width: 500px){
+    .about{
+        padding: 0 2.2rem;
+        margin-top: 2rem;
+    }
     .about-description{
-        font-size: 1rem;
+        font-size: .9rem;
     }
     .about-title{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .final-quote{
         margin-top: 2rem;

@@ -2,6 +2,8 @@ import './Home.css'
 import image from '../../assets/images/image.jpg'
 import LanguagesSelector from '../layout/LanguagesSelector';
 import { useTranslation } from "react-i18next";
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/free-solid-svg-icons';
 
 
 const Home = () => {
@@ -47,6 +49,7 @@ const Home = () => {
             <div className="right-description">
                 <div className="image-container">
                     <img src={image} alt="description" />
+                    <p className='image-location'>Baía das Gatas, São Vicente, Cabo Verde</p>
                 </div>
             </div>
         </section>
