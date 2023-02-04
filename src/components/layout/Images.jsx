@@ -8,6 +8,12 @@ import galleryImage3 from '../../assets/images/gallery/gallery-image3.jpg'
 import galleryImage4 from '../../assets/images/gallery/gallery-image4.jpg'
 import galleryImage5 from '../../assets/images/gallery/gallery-image5.jpg'
 import galleryImage6 from '../../assets/images/gallery/gallery-image6.jpg'
+import galleryImage7 from '../../assets/images/gallery/gallery-image7.jpg'
+import galleryImage8 from '../../assets/images/gallery/gallery-image8.jpg'
+import galleryImage9 from '../../assets/images/gallery/gallery-image9.jpg'
+import galleryImage10 from '../../assets/images/gallery/gallery-image10.jpg'
+import galleryImage11 from '../../assets/images/gallery/gallery-image11.jpg'
+
 
 
 const IMAGENS = [
@@ -20,6 +26,11 @@ const IMAGENS = [
     galleryImage4,
     galleryImage5,
     galleryImage6,
+    galleryImage7,
+    galleryImage8,
+    galleryImage9,
+    galleryImage10,
+    galleryImage11,
 ]
 
 export default IMAGENS;
