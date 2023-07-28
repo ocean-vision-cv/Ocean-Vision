@@ -1,0 +1,113 @@
+.languages-dropdown{
+   padding: .5rem;
+   width: 10rem;
+   transition: .5s; 
+   position: absolute;
+   right: 15%;
+   top: 0;
+   z-index: 1;
+}
+
+.selected-language{
+    border-radius: 2rem;
+    background-color: var(--background-gray);
+    width: 100%;
+    position: relative;
+    padding: .5rem 1rem;
+    display: flex;
+    gap: .5rem;
+    border: 0.1rem solid var(--blue);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: .8rem;
+    color: var(--blue);
+}
+.selected-language::after{
+    display: block;
+    content: "";
+    width: .5rem;
+    height: .5rem;
+    border-right: 0.1rem solid var(--blue);
+    border-bottom: 0.1rem solid var(--blue);
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+    transform: rotate(45deg);
+    transition: .3s; 
+}
+
+.selected-language.open::after{
+    transform: rotate(225deg);
+    top: .8rem;
+}
+
+.language-item{
+    width: 100%;
+    top: 100%;
+    right: 0%;
+    display: flex;
+    gap: .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    background-color: var(--light-gray);
+    font-weight: bold;
+    font-size: .8rem;
+    color: var(--blue);
+    transition: .5s;
+    margin: 0rem 0rem;
+    /* border-radius: 1.5rem; */
+}
+
+.language-item:first-child{
+    border-top-left-radius: 1.5rem;
+}
+.language-item:last-child{
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.language-item:hover{
+    color: var(--blue);
+    background-color:var(--median-gray);
+}
+
+@media screen and (max-width: 1200px){
+    .languages-dropdown{
+        right: calc(15% - 2rem);
+     }
+}
+@media screen and (max-width: 900px){
+    .language-name{
+        display: none;
+    }
+    .languages-dropdown{
+        width: 3.5rem;
+        height: 3.5rem;
+        
+    }
+    .selected-language{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .language-item{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .selected-language::after{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 600px){
+
+}

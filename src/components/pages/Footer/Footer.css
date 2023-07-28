@@ -1,0 +1,116 @@
+.footer{
+    position: relative;
+    width: 100%;
+    min-height: 10rem;
+    background: var(--blue);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
+.wave {
+    position: absolute;
+    top: -99px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../../../assets/images/wave.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 10s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 10s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 8s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 8s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.link-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+}
+.link{
+    text-decoration: none;
+    color:var(--light-gray);
+    font-size: 1.3rem;
+    transition: .3s;
+}
+.link:hover{
+  text-decoration-line: underline;  
+}
+
+.link-icon{
+    width: 1em;
+}
+
+.copyright{
+    color: var(--light-gray);
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px){
+    .social-links{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .link{
+      font-size: 1rem;
+    }
+    .copyright{
+      font-size: .8rem;
+    }
+}

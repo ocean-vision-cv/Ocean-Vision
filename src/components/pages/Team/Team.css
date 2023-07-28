@@ -1,0 +1,66 @@
+.team-page {
+  width: 100%;
+  height: auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.team-page-title {
+  color: var(--blue);
+  font-family: "Riffic";
+  font-size: 1.8rem;
+  margin: 5rem 0;
+}
+.team-container {
+  width: 100%;
+  height: auto;
+  justify-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.profile {
+  width: 25rem;
+  height: 10rem;
+  display: flex;
+  filter: drop-shadow(2px 2px 3px #00000087);
+  background-color: var(--background-gray);
+  border-radius: 1rem;
+}
+.profile-image {
+  width: 8rem;
+  height: 100%;
+}
+.profile-image img {
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-10%, 0);
+  border-radius: 1rem;
+}
+.profile-description {
+  width: auto;
+  padding: 1rem 2rem;
+}
+.profile-position {
+  color: var(--blue);
+  font-family: "Riffic";
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+.profile-name,
+.profile-education {
+  font-size: 1.2rem;
+}
+.profile-name {
+  font-weight: bold;
+  display: flex;
+}
+.profile-icon {
+  height: 2rem;
+}

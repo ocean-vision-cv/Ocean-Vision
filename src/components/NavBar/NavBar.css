@@ -1,0 +1,84 @@
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.5rem;
+    z-index: 1;
+
+}
+
+.logo-ocean-vision{
+    width: 15rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -1rem;
+    margin-left: 20%;
+    transition: .5s;
+}
+
+
+
+/* ----------------------------------*/
+
+.custom-shape-divider-top-1688723042 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transition: .5s;
+}
+
+.custom-shape-divider-top-1688723042 svg {
+    position: relative;
+    display: block;
+    width: calc(156% + 1.3px);
+    height: 160px;
+}
+
+.custom-shape-divider-top-1688723042 .shape-fill {
+    fill: var(--blue);
+}
+/* @media (max-width: 1200px) {
+    .logo-ocean-vision{
+        margin-top: -1rem;
+        margin-left: 15rem;
+    }
+}
+@media (max-width: 1000px) {
+    .logo-ocean-vision{
+        margin-top: -1rem;
+        margin-left: 12rem;
+    }
+} */
+
+/** For mobile devices **/
+@media (max-width: 950px) {
+    .logo-ocean-vision{
+        width: 15rem;
+        margin-left: calc(20% - 3rem);
+    }
+}
+
+
+@media (max-width: 800px) {
+    .custom-shape-divider-top-1688723042 svg {
+        width: calc(156% + 1.3px);
+        height: 118px;
+    }
+    .logo-ocean-vision{
+        width: 12rem;
+        margin-left: calc(20% - 3rem);
+    }
+}
+
+@media (max-width: 550px) {
+    .logo-ocean-vision{
+        width: 10rem;
+        margin-top: -.5rem;
+        margin-left: calc(20% - 3rem);
+    }
+}

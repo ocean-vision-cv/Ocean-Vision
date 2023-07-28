@@ -16,6 +16,7 @@ import galleryImage11 from '../../assets/images/gallery/gallery-image11.jpg'
 
 
 
+
 const IMAGENS = [
     galleryHackthon1,
     galleryHackthon2,
