@@ -22,6 +22,7 @@
   justify-content: center;
   gap: 2rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 .profile {
   width: 25rem;
@@ -63,4 +64,57 @@
 }
 .profile-icon {
   height: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 900px) {
+  .team-page-title{
+    margin-bottom: 2rem;
+  }
+  .team-container{
+    gap: 1rem;
+  }
+  .profile {
+    width: 22rem;
+    height: 8rem;
+  }
+  .profile-image {
+    width: 8rem;
+  }
+  .profile-name,
+  .profile-education {
+    font-size: 1rem;
+  }
+
+  .profile-description {
+    padding: 1rem 0rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .team-page-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .profile {
+    width: 22rem;
+    height: 6rem;
+  }
+  .profile-icon {
+    height: 1rem;
+  }
+  .profile-image {
+    width: 6rem;
+  }
+
+  .profile-name,
+  .profile-education {
+    font-size: .8rem;
+  }
+
+  .profile-description {
+    padding: .5rem 0;
+  }
 }

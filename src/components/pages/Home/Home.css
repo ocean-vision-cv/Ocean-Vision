@@ -19,11 +19,6 @@
   object-fit: cover;
   width: 100%;
 }
-.description-title {
-  color: var(--blue);
-  font-family: "Riffic";
-  font-size: 4rem;
-}
 .sub-title {
   color: var(--blue);
   font-family: "Riffic";
@@ -57,32 +52,26 @@
   padding: 0 2rem;
   position: relative;
 }
-.image-box {
-  width: 100%;
-  height: 30rem;
+
+@media screen and (max-width: 1200px) {
 }
-@media screen and (max-width: 1300px) {
+
+@media screen and (max-width: 900px) {
   .home {
     flex-direction: column;
-    padding: 0 5rem;
+    height: auto;
   }
   .left-description {
     width: 100%;
-    height: auto;
   }
   .right-description {
     width: 100%;
-    height: auto;
-  }
-  .image-container img {
-    max-height: 80vh;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .home {
     padding: 0 0.1rem;
-    margin-top: 0.5rem;
   }
   .left-description {
     margin-top: 0;
@@ -90,19 +79,7 @@
   .container-description {
     font-size: 1rem;
   }
-  .description-title {
-    font-size: 2.3rem;
-    margin-top: 2.5rem;
-  }
-  .image-container img {
-    max-height: 50vh;
-  }
   .sub-title {
     font-size: 1.5rem;
-  }
-  .image-location {
-    font-size: 0.5rem;
-    padding: 0.6rem;
-    border-radius: 0.6rem;
   }
 }
