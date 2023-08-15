@@ -3,32 +3,32 @@
    width: 10rem;
    transition: .5s; 
    position: absolute;
-   right: 15%;
+   right: 2rem;
    top: 0;
    z-index: 1;
 }
 
 .selected-language{
     border-radius: 2rem;
-    background-color: var(--background-gray);
+    background-color: transparent;
     width: 100%;
     position: relative;
     padding: .5rem 1rem;
     display: flex;
     gap: .5rem;
-    border: 0.1rem solid var(--blue);
+    border: .15rem solid var(--background-gray);
     cursor: pointer;
     font-weight: bold;
     font-size: .8rem;
-    color: var(--blue);
+    color: var(--background-gray);
 }
 .selected-language::after{
     display: block;
     content: "";
     width: .5rem;
     height: .5rem;
-    border-right: 0.1rem solid var(--blue);
-    border-bottom: 0.1rem solid var(--blue);
+    border-right: .15rem solid var(--background-gray);
+    border-bottom: .15rem solid var(--background-gray);
     position: absolute;
     right: 1rem;
     top: .5rem;
@@ -49,13 +49,13 @@
     gap: .5rem;
     padding: .5rem 1rem;
     cursor: pointer;
-    background-color: var(--light-gray);
+    background-color: transparent;
+    border-left: 0.12rem solid var(--background-gray);
+    border-right: 0.12rem solid var(--background-gray);
     font-weight: bold;
     font-size: .8rem;
-    color: var(--blue);
+    color: var(--background-gray);
     transition: .5s;
-    margin: 0rem 0rem;
-    /* border-radius: 1.5rem; */
 }
 
 .language-item:first-child{
@@ -64,25 +64,25 @@
 .language-item:last-child{
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
+    border-bottom: 0.12rem solid var(--background-gray);
 }
 
 .language-item:hover{
-    color: var(--blue);
-    background-color:var(--median-gray);
+    background-color: rgba(255, 255, 255, 0.182);
 }
 
 @media screen and (max-width: 1200px){
-    .languages-dropdown{
-        right: calc(15% - 2rem);
-     }
+    
 }
 @media screen and (max-width: 900px){
+    
     .language-name{
         display: none;
     }
     .languages-dropdown{
         width: 3.5rem;
         height: 3.5rem;
+        right: 1rem;
         
     }
     .selected-language{
@@ -109,5 +109,15 @@
 
 }
 @media screen and (max-width: 600px){
-
+    .languages-dropdown{
+        width: 2.5rem;
+        height: 2.5rem;
+        right: .2rem;
+    }
+    .selected-language{
+        font-size: .7rem;
+    }
+    .language-item{
+        font-size: .7rem;
+    }
 }

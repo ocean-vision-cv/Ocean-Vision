@@ -4,8 +4,20 @@
     height: 1rem;
     fill: var(--blue);
 }
-.ocean-vision-logo{
-    margin: .5rem;
-    width: 8rem;
-    fill: white;
+
+.nav-bar-Facebook{
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: var(--background-gray); 
+}
+.nav-bar-YouTube{
+    margin-top: .2rem;
+    width: 1.35rem;
+    height: 1.35rem;
+    fill: var(--background-gray); 
+}
+.nav-bar-Instagram{
+    width: 1.2rem;
+    height: 1.3rem;
+    fill: var(--background-gray); 
 }

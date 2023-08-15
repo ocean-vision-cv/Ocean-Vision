@@ -3,6 +3,7 @@ import backgroundOceanVision from "../../../assets/images/backgroundOceanVision.
 import Pause from "../../../assets/icons/Pause";
 import Start from "../../../assets/icons/Start";
 import "./DivingGoggles.css";
+import NavBar from "../../NavBar/NavBar";
 
 const DivingGoggles = () => {
   const video = useRef(null);
@@ -31,6 +32,7 @@ const DivingGoggles = () => {
 
   return (
     <div className="diving-goggles-container">
+      <NavBar/>
       <img
         src={backgroundOceanVision}
         alt="background"

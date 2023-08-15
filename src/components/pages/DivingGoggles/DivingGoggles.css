@@ -105,7 +105,7 @@
     padding: .5em .5rem;
     height: 2.5rem;
     outline: none;
-    border: solid var(--light-gray) .1rem;
+    border: solid var(--light-gray) .12rem;
     font-weight: bold;
     font-size: .8rem;
     background-color: transparent;
@@ -121,8 +121,8 @@
 }
 
 .location-button:hover {
-    background-color: var(--background-gray);
-    color: var(--blue);
+    background-color: rgba(255, 255, 255, 0.182);
+    /* color: var(--blue); */
 }
 
 .location-button-active {
