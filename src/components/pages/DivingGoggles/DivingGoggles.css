@@ -1,0 +1,152 @@
+.diving-goggles-container{
+    width: 100vw;
+    max-height: 100vh;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+.background-ocean-vision{
+    width: 100%;
+    object-fit: cover;
+    position: absolute
+     
+}
+.video-in-goggles{
+    width: 100%;
+    object-fit: cover;
+}
+
+.control-list {
+    position: absolute;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100vw;
+    bottom: 5%;
+    transition: 1s;
+}
+
+.video-control {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--background-gray);
+    color: var(--blue);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-list,
+.location-list-hidden {
+    display: flex;
+    align-items: center;
+    visibility: visible;
+    opacity: 1;
+    margin-left: .5rem;
+    animation: open-state .5s ease-out forwards;
+}
+
+.location-list-hidden {
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    animation: close-state .5s ease-out forwards;
+}
+
+@keyframes open-state {
+    100% {
+        width: 16rem;
+    }
+
+    80% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    0% {
+
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        margin-left: 0;
+    }
+}
+
+@keyframes close-state {
+    100% {
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        margin-left: 0;
+    }
+
+    40% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    0% {
+        width: 16rem;
+
+    }
+}
+
+.location-button,
+.location-button-active {
+    padding: .5em .5rem;
+    height: 2.5rem;
+    outline: none;
+    border: solid var(--light-gray) .1rem;
+    font-weight: bold;
+    font-size: .8rem;
+    background-color: transparent;
+    color: var(--light-gray);
+    transition: .5s;
+    cursor: pointer;
+}
+#button-first{
+   border-radius: 2rem 0rem 0rem 2rem;
+}
+#button-last{
+   border-radius: 0rem 2rem 2rem 0rem;
+}
+
+.location-button:hover {
+    background-color: var(--background-gray);
+    color: var(--blue);
+}
+
+.location-button-active {
+    font-size: .8rem;
+    background-color: var(--background-gray);
+    color: var(--blue);
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 600px) {
+    .video-control{
+        width: 2rem;
+        height: 2rem;
+    }
+    .location-button,
+    .location-button-active{
+        height: 2rem;
+        font-size: .6rem;
+    }
+} 
+

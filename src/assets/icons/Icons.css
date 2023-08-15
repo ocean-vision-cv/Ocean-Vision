@@ -2,5 +2,10 @@
 .controle-icon{
     width: 1rem;
     height: 1rem;
-    fill: var(--light-gray);
+    fill: var(--blue);
+}
+.ocean-vision-logo{
+    margin: .5rem;
+    width: 8rem;
+    fill: white;
 }
