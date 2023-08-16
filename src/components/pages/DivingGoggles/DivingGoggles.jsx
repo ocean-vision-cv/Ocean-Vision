@@ -47,6 +47,7 @@ const DivingGoggles = () => {
       >
         <source src={videos[videoIndex]}></source>
       </video>
+      <p className="punch-line">Conetando voce ao oceano...</p>
       <div className="control-list">
         <button className="video-control" onClick={togglePlayVideo}>
           {isVideoPlaying ? <Pause /> : <Start />}

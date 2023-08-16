@@ -1,11 +1,17 @@
-import React from "react";
-import vrBack from "../../../assets/images/vrBack.png";
-import vrFont from "../../../assets/images/vrFront.png";
-import "./Previewer360.css";
+import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Previewer360.css";
 
 const Previewer360 = () => {
+  const videoLink =
+    "https://firebasestorage.googleapis.com/v0/b/ocean-vision.appspot.com/o/video360.mp4?alt=media&token=353c85b4-ccaa-4ed5-b0ac-63c0c4fdbeed";
   const navigate = useNavigate();
+
+  const video = useRef(null);
+
+  function PlayVideo() {
+    video.current.play();
+  }
 
   function redirectView360() {
     navigate("/360");
@@ -13,24 +19,47 @@ const Previewer360 = () => {
 
   return (
     <section className="previewer">
-      <div className="previewer-box" onClick={redirectView360}>
-        <img src={vrBack} className="vr-back-image" alt="back" />
-        <img src={vrFont} className="vr-front-image" alt="font" />
-      </div>
-      <div className="previewer-description-container">
-        <p className="previewer-title"> Visão 360°</p>
-        <p className="previewer-description">
-          Uma imagem em 360 graus é como uma fotografia que captura tudo ao seu
-          redor, como se você estivesse no centro. Imagine tirar uma foto de
-          tudo o que está à sua volta e, em seguida, unir essas imagens para
-          formar uma única foto que você pode explorar olhando para cima, para
-          baixo e para os lados, como se estivesse realmente lá. É como se você
-          pudesse olhar em todas as direções a partir de um único ponto na
-          imagem.
-        </p>
-        <button onClick={redirectView360} className="previewer-button-redirect">
-          Experimentar Agora
+      <div className="overly-color">
+        <p className="previewer-punch-line">Oceano em 360°</p>
+        <button className="previewer-button" onClick={redirectView360}>
+          Entrar
         </button>
+      </div>
+
+      <div class="custom-shape-divider-top-1692195853">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <video
+        ref={video}
+        className="video-360"
+        autoPlay
+        muted
+        onEnded={PlayVideo}
+      >
+        <source src={videoLink}></source>
+      </video>
+      <div class="custom-shape-divider-bottom-1692196263">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </section>
   );

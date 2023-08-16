@@ -24,6 +24,7 @@ const Home = () => {
               Explorar variedades de vida marinha promovendo a conscientização e
               contribuindo para preservação e engajamento de entusiastas do
               oceano.
+              "Para preservar é preciso amar e para amar é preciso conhecer"
             </p>
           </div>
           <div className="how-description">
