@@ -24,7 +24,7 @@ const Team = () => {
                 src={ProfilePosition}
                 alt="position"
               />
-              CEO
+              Co-founder/CEO
             </p>
             <p className="profile-name">Vitória Anthony</p>
             <p className="profile-education">Engenharia Informática e Telecomunicações</p>
@@ -41,7 +41,7 @@ const Team = () => {
                 src={ProfilePosition}
                 alt="position"
               />
-              CTO
+              Co-founder/CTO
             </p>
             <p className="profile-name">Nuno Lima</p>
             <p className="profile-education">Engenharia Informática e Telecomunicações</p>

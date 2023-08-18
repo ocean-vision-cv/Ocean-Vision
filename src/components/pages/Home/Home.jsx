@@ -23,8 +23,10 @@ const Home = () => {
             <p>
               Explorar variedades de vida marinha promovendo a conscientização e
               contribuindo para preservação e engajamento de entusiastas do
-              oceano.
-              "Para preservar é preciso amar e para amar é preciso conhecer"
+              oceano.<br></br>
+              <span className="why-quote">
+                "Para preservar é preciso amar e para amar é preciso conhecer"
+              </span>
             </p>
           </div>
           <div className="how-description">
@@ -32,7 +34,8 @@ const Home = () => {
             <p>
               A essência desta experiencia imersiva reside na utilização de
               óculos de realidade virtual para visualizar imagens e videos em
-              360 graus.
+              360 graus. <br></br>O Projeto inclui a captura tratamento e demostração
+              dessas imagens através da nossa aplicação
             </p>
           </div>
         </div>

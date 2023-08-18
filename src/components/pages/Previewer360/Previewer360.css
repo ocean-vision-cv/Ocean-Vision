@@ -115,3 +115,31 @@
 .custom-shape-divider-bottom-1692196263 .shape-fill {
   fill: var(--background-gray);
 }
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 900px) {
+  .previewer-punch-line{
+    font-size: 6rem;
+  }
+  .custom-shape-divider-top-1692195853{
+    width: 150%;
+  }
+  .custom-shape-divider-bottom-1692196263{
+    width: 150%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .previewer-punch-line{
+    font-size: 3rem;
+  }
+  .custom-shape-divider-top-1692195853{
+    width: 300%;
+    left: -100%;
+  }
+  .custom-shape-divider-bottom-1692196263{
+    width: 300%;
+    left: -100%;
+  }
+}

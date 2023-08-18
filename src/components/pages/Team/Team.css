@@ -25,7 +25,7 @@
   flex-wrap: wrap;
 }
 .profile {
-  width: 30rem;
+  width: 34.5rem;
   height: 10rem;
   display: flex;
   filter: drop-shadow(2px 2px 3px #00000087);
@@ -44,7 +44,7 @@
 }
 .profile-description {
   width: auto;
-  padding: 1rem 2rem;
+  padding: 1rem 0rem 0rem 2rem;
 }
 .profile-position {
   color: var(--blue);
