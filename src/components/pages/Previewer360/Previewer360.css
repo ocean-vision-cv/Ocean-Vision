@@ -85,9 +85,6 @@
   display: block;
   width: calc(135% + 1.3px);
   height: 160px;
-}
-
-.custom-shape-divider-top-1692195853 .shape-fill {
   fill: var(--background-gray);
 }
 
@@ -110,11 +107,10 @@
   display: block;
   width: calc(135% + 1.3px);
   height: 160px;
-}
-
-.custom-shape-divider-bottom-1692196263 .shape-fill {
   fill: var(--background-gray);
 }
+
+
 @media screen and (max-width: 1200px) {
 }
 
