@@ -1,17 +1,17 @@
 import React from "react";
-import "./Team.css";
-import Vitoria from "../../../assets/images/VitoriaAnthony.jpg";
-import Nuno from "../../../assets/images/NunoLima.jpg";
+import { useTranslation } from "react-i18next";
 import Elida from "../../../assets/images/ElidaPio.jpg";
-import William from "../../../assets/images/WilliamBaleno.jpg";
+import Nuno from "../../../assets/images/NunoLima.jpg";
 import ProfilePosition from "../../../assets/images/ProfilePosition.png";
-import ComputerEngineering from "../../../assets/images/ComputerEngineering.png";
-import Biology from "../../../assets/images/Biology.png";
+import Vitoria from "../../../assets/images/VitoriaAnthony.jpg";
+import William from "../../../assets/images/WilliamBaleno.jpg";
+import "./Team.css";
 
 const Team = () => {
+  const { t } = useTranslation();
   return (
     <section className="team-page">
-      <p className="team-page-title">Equipa da Ocean Vision</p>
+      <p className="team-page-title">{t("team-title")}</p>
       <div className="team-container">
         <div className="profile">
           <div className="profile-image">
@@ -27,7 +27,7 @@ const Team = () => {
               Co-founder/CEO
             </p>
             <p className="profile-name">Vitória Anthony</p>
-            <p className="profile-education">Engenharia Informática e Telecomunicações</p>
+            <p className="profile-education">{t("engineering")}</p>
           </div>
         </div>
         <div className="profile">
@@ -44,7 +44,7 @@ const Team = () => {
               Co-founder/CTO
             </p>
             <p className="profile-name">Nuno Lima</p>
-            <p className="profile-education">Engenharia Informática e Telecomunicações</p>
+            <p className="profile-education">{t("engineering")}</p>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ const Team = () => {
               CMO
             </p>
             <p className="profile-name">Élida Pio</p>
-            <p className="profile-education">Ciencias Biologicas</p>
+            <p className="profile-education">{t("biological")}</p>
           </div>
         </div>
         <div className="profile">
@@ -77,10 +77,10 @@ const Team = () => {
                 src={ProfilePosition}
                 alt="position"
               />
-              Programador
+              {t("programmer")}
             </p>
             <p className="profile-name">William Baleno</p>
-            <p className="profile-education">Engenharia Informática e Telecomunicações</p>
+            <p className="profile-education">{t("engineering")}</p>
           </div>
         </div>
       </div>

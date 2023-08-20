@@ -17,8 +17,8 @@ const IMAGENS = [
   "https://firebasestorage.googleapis.com/v0/b/ocean-vision.appspot.com/o/galeria%2F106VPR%20(1).jpg?alt=media&token=541d1046-66a1-4671-8c82-9e76245146b0",
   "https://firebasestorage.googleapis.com/v0/b/ocean-vision.appspot.com/o/galeria%2F107FAPN%20(1).jpg?alt=media&token=7a722401-b7e7-4a73-8859-33e92ba05595",
   "https://firebasestorage.googleapis.com/v0/b/ocean-vision.appspot.com/o/galeria%2F108TOCM%20(24).jpg?alt=media&token=e2b46d48-2913-4be7-9652-53ba3f38a951",
-  "https://firebasestorage.googleapis.com/v0/b/ocean-vision.appspot.com/o/galeria%2F108TOCM%20(8).jpg?alt=media&token=b7ccf45a-58e8-4760-885e-d63d6b064538"
-]
+  "https://firebasestorage.googleapis.com/v0/b/ocean-vision.appspot.com/o/galeria%2F108TOCM%20(8).jpg?alt=media&token=b7ccf45a-58e8-4760-885e-d63d6b064538",
+];
 const GalleryPreviewer = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -104,13 +104,9 @@ const GalleryPreviewer = () => {
         </ul>
       </div>
       <button className="button-redirect-gallery" onClick={redirectToGallery}>
-        Ver Galeria
+        {t("gallery-previewer-button")}
       </button>
     </section>
   );
 };
 export default GalleryPreviewer;
-// <section className='gallery-page'>
-//     <h2 className='events-title'>{t("events-title")}</h2>
-//     <PhotoSlider/>
-// </section>

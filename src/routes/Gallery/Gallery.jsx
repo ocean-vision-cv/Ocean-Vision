@@ -1,28 +1,29 @@
 import { getDownloadURL, listAll, ref } from "firebase/storage";
 import React, { useEffect, useState } from "react";
-import storage from "../../firebase/FirebaseConfig";
+import { useTranslation } from "react-i18next";
 import Footer from "../../components/pages/Footer/Footer";
+import storage from "../../firebase/FirebaseConfig";
 import "./Gallery.css";
 
-const eventList = {
-  "100FO2":["Feira Oportunidades 2", "Mindelo 2023"],
-  "101DD":["Demo day BCVD#4", "Praia 2023"],
-  "102DOL":["Dia Oceano", "Mindelo, Laginha 2023"],
-  "103DORP":["Dia Oceano", "Ribeira das Patas 2023"],
-  "104DORTB":["Dia Oceano", "Replica Torre de Belem 2023"],
-  "105OYS":["Ocean Youth Summit", "Dinamarca, Aarhus 2023"],
-  "106VPR":["Visita PR São Tomé e Príncipe", "ISECMAR 2023"],
-  "107FAPN":["Feira Azul", "Porto Novo 2023"],
-  "108TOCM":["The Ocean Race", "Mindelo StopOver 2023"],
-  "109FO1":["Feira Oportunidades 1", "Mindelo 2022"],
-  "110OWH":["Ocean Week Hackathon", "Mindelo 2022"],
-}
-
 const Gallery = () => {
+  const { t } = useTranslation();
+  const eventList = {
+    "100FO2": [t("100FO2-event"),t("100FO2-info")],
+    "101DD": [t("101DD-event"),t("101DD-info")],
+    "102DOL": [t("102DOL-event"),t("102DOL-info")],
+    "103DORP": [t("103DORP-event"),t("103DORP--info")],
+    "104DORTB": [t("104DORTB-event"),t("104DORTB-info")],
+    "105OYS": [t("105OYS-event"),t("105OYS-info")],
+    "106VPR": [t("106VPR-event"),t("106VPR-info")],
+    "107FAPN": [t("107FAPN-event"),t("107FAPN-info")],
+    "108TOCM": [t("108TOCM-event"),t("108TOCM-info")],
+    "109FO1": [t("109FO1-event"),t("109FO1-info")],
+    "110OWH": [t("110OWH-event"),t("110OWH-info")]
+  };
   const [imagesUrls, setImagesUrls] = useState([]);
   const [selectImage, setSelectImage] = useState(null);
   const [selectImageDescription, setSelectImageDescription] = useState([]);
-  
+
   function GetFileNameByURL(url) {
     var parts = url.split("/");
     return parts[parts.length - 1]
@@ -61,16 +62,15 @@ const Gallery = () => {
           />
         </div>
       )}
-      <h2 className="gallery-title">Galeria</h2>
+      <h2 className="gallery-title">{t("gallery-title")}</h2>
       <p className="gallery-description">
-        As Fotos descrevem a nossa historia<br></br>"Roubando os sorrisos que o
-        oceano precisa"
+        {t("gallery-description-1")}
+        <br></br>"{t("gallery-description-2")}"
       </p>
       <div className="gallery-container">
         {imagesUrls.map((link) => {
-          // var photoDescription = eventList[GetFileNameByURL(link)]
-          var fileName = GetFileNameByURL(link)
-          var photoDescription = eventList[fileName]
+          var fileName = GetFileNameByURL(link);
+          var photoDescription = eventList[fileName];
           return (
             <div className="gallery-photo-container" key={link}>
               {!selectImage && (

@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./Partnerships.css";
 
 const Partnerships = () => {
+  const { t } = useTranslation();
   return (
     <section className="partnerships">
       <img
@@ -11,13 +13,12 @@ const Partnerships = () => {
         className="partnership-image"
       ></img>
       <div className="partnership-description">
-        <p className="partnership-title">Parceiros</p>
+        <p className="partnership-title">{t("partnership-title")}</p>
         <p>
-          A Ocean Vision está aberta a oportunidades que compartilhem nosso
-          compromisso com o uso sustentável dos recursos marinhos.<br></br> Se
-          você está interessado em colaborar conosco ou nos convidar para
-          eventos, entre em contato. <br></br>Esperamos construir conexões
-          significativas e contribuir para a preservação dos oceanos juntos.
+          {t("partnership-description-1")}
+          <br></br> {t("partnership-description-2")}
+          <br></br>
+          {t("partnership-description-3")}
         </p>
       </div>
     </section>

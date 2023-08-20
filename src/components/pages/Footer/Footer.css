@@ -22,28 +22,28 @@
   }
   
   .wave#wave1 {
-    z-index: 1000;
+    z-index: 10;
     opacity: 1;
     bottom: 0;
     animation: animateWaves 10s linear infinite;
   }
   
   .wave#wave2 {
-    z-index: 999;
+    z-index: 9;
     opacity: 0.5;
     bottom: 10px;
     animation: animate 10s linear infinite !important;
   }
   
   .wave#wave3 {
-    z-index: 1000;
+    z-index: 10;
     opacity: 0.2;
     bottom: 15px;
     animation: animateWaves 8s linear infinite;
   }
   
   .wave#wave4 {
-    z-index: 999;
+    z-index: 9;
     opacity: 0.7;
     bottom: 20px;
     animation: animate 8s linear infinite;

@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import "./Previewer360.css";
 
 const Previewer360 = () => {
+  const { t } = useTranslation();
   const videoLink =
     "https://firebasestorage.googleapis.com/v0/b/ocean-vision.appspot.com/o/video360.mp4?alt=media&token=353c85b4-ccaa-4ed5-b0ac-63c0c4fdbeed";
   const navigate = useNavigate();
@@ -20,9 +22,9 @@ const Previewer360 = () => {
   return (
     <section className="previewer">
       <div className="overly-color">
-        <p className="previewer-punch-line">Oceano em 360°</p>
+        <p className="previewer-punch-line">{t("previewer360-punch-line")}</p>
         <button className="previewer-button" onClick={redirectView360}>
-          Entrar
+          {t("previewer360-button")}
         </button>
       </div>
 

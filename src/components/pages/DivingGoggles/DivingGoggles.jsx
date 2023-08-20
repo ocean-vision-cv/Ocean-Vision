@@ -1,11 +1,13 @@
 import React, { useRef, useState } from "react";
-import backgroundOceanVision from "../../../assets/images/backgroundOceanVision.png";
 import Pause from "../../../assets/icons/Pause";
 import Start from "../../../assets/icons/Start";
-import "./DivingGoggles.css";
+import backgroundOceanVision from "../../../assets/images/backgroundOceanVision.png";
 import NavBar from "../../NavBar/NavBar";
+import { useTranslation } from "react-i18next";
+import "./DivingGoggles.css";
 
 const DivingGoggles = () => {
+  const { t } = useTranslation();
   const video = useRef(null);
   const videos = [
     "https://firebasestorage.googleapis.com/v0/b/ocean-vision.appspot.com/o/video-in-goggles-laginha2.mp4?alt=media&token=5c8c50a1-3262-49de-b3c6-b07d7977b73f",
@@ -32,7 +34,7 @@ const DivingGoggles = () => {
 
   return (
     <div className="diving-goggles-container">
-      <NavBar/>
+      <NavBar />
       <img
         src={backgroundOceanVision}
         alt="background"
@@ -47,7 +49,7 @@ const DivingGoggles = () => {
       >
         <source src={videos[videoIndex]}></source>
       </video>
-      <p className="punch-line">Conetando voce ao oceano...</p>
+      <p className="punch-line">{t("diving-goggles-punch-line")}</p>
       <div className="control-list">
         <button className="video-control" onClick={togglePlayVideo}>
           {isVideoPlaying ? <Pause /> : <Start />}
