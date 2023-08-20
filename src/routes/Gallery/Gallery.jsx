@@ -11,7 +11,7 @@ const Gallery = () => {
     "100FO2": [t("100FO2-event"),t("100FO2-info")],
     "101DD": [t("101DD-event"),t("101DD-info")],
     "102DOL": [t("102DOL-event"),t("102DOL-info")],
-    "103DORP": [t("103DORP-event"),t("103DORP--info")],
+    "103DORP": [t("103DORP-event"),t("103DORP-info")],
     "104DORTB": [t("104DORTB-event"),t("104DORTB-info")],
     "105OYS": [t("105OYS-event"),t("105OYS-info")],
     "106VPR": [t("106VPR-event"),t("106VPR-info")],
