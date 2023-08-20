@@ -7,6 +7,7 @@ const Partnerships = () => {
   return (
     <section className="partnerships">
       <img
+        alt="partner"
         src={
           "https://firebasestorage.googleapis.com/v0/b/ocean-vision.appspot.com/o/galeria%2F101DD%20%20(5).jpg?alt=media&token=0d328d4e-2f4c-492b-9722-2386e9f8c117"
         }

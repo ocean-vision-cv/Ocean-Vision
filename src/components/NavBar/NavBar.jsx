@@ -14,7 +14,7 @@ const NavBar = () => {
       <div className="social-mideia-links">
         <a href="https://www.facebook.com/profile.php?id=100088434805718" ><Facebook2/></a> 
         <a href="https://www.instagram.com/ocean_vision_cv" ><Instagram2/></a> 
-        <a href="#" ><YouTube/></a> 
+        <a href="https://www.youtube.com/@HorizonteAzulCaboVerde" ><YouTube/></a> 
       </div>
       
       
