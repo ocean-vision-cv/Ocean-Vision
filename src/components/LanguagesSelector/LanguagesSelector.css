@@ -1,0 +1,123 @@
+.languages-dropdown{
+   padding: .5rem;
+   width: 10rem;
+   transition: .5s; 
+   position: absolute;
+   right: 2rem;
+   top: 0;
+   z-index: 1;
+}
+
+.selected-language{
+    border-radius: 2rem;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    padding: .5rem 1rem;
+    display: flex;
+    gap: .5rem;
+    border: .15rem solid var(--background-gray);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: .8rem;
+    color: var(--background-gray);
+}
+.selected-language::after{
+    display: block;
+    content: "";
+    width: .5rem;
+    height: .5rem;
+    border-right: .15rem solid var(--background-gray);
+    border-bottom: .15rem solid var(--background-gray);
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+    transform: rotate(45deg);
+    transition: .3s; 
+}
+
+.selected-language.open::after{
+    transform: rotate(225deg);
+    top: .8rem;
+}
+
+.language-item{
+    width: 100%;
+    top: 100%;
+    right: 0%;
+    display: flex;
+    gap: .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-left: 0.12rem solid var(--background-gray);
+    border-right: 0.12rem solid var(--background-gray);
+    font-weight: bold;
+    font-size: .8rem;
+    color: var(--background-gray);
+    transition: .5s;
+}
+
+.language-item:first-child{
+    border-top-left-radius: 1.5rem;
+}
+.language-item:last-child{
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom: 0.12rem solid var(--background-gray);
+}
+
+.language-item:hover{
+    background-color: rgba(255, 255, 255, 0.182);
+}
+
+@media screen and (max-width: 1200px){
+    
+}
+@media screen and (max-width: 900px){
+    
+    .language-name{
+        display: none;
+    }
+    .languages-dropdown{
+        width: 3.5rem;
+        height: 3.5rem;
+        right: 1rem;
+        
+    }
+    .selected-language{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .language-item{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .selected-language::after{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .languages-dropdown{
+        width: 2.5rem;
+        height: 2.5rem;
+        right: .2rem;
+    }
+    .selected-language{
+        font-size: .7rem;
+    }
+    .language-item{
+        font-size: .7rem;
+    }
+}

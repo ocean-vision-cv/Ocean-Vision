@@ -1,0 +1,48 @@
+.partnerships {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.partnership-image {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+.partnership-title {
+  color: var(--blue);
+  font-family: "Riffic";
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.partnership-description {
+  height: 100%;
+  font-size: 1.6rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  text-align: left;
+  width: 40%;
+}
+@media screen and (max-width: 900px) {
+  .partnerships {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 5rem;
+  }
+  .partnership-description{
+    width: 100%;
+  }
+  .partnership-image{
+    width: 90%;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .partnership-description{
+    font-size: 1rem;
+  }
+}

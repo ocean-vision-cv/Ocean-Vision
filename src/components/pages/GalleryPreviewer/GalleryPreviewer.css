@@ -1,0 +1,130 @@
+.gallery-page {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: 10rem 0;
+}
+.gallery-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  filter: brightness(0.5);
+  transform: scale(1.3, 1.3) rotate(3deg);
+}
+.button-redirect-gallery {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--light-gray);
+  z-index: 1;
+  background-color: var(--blue);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  color: var(--background-gray);
+  font-size: 1.2rem;
+  width: 20rem;
+  height: 3rem;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.button-redirect-gallery:hover {
+  transform: translate(-50%, -50%) scale(1.1, 1.1);
+}
+
+.photo-marquee-down {
+  list-style: none;
+  width: 33%;
+  animation: scrolling-down 90s linear infinite;
+}
+.photo-marquee-up {
+  list-style: none;
+  width: 33%;
+  animation: scrolling-up 90s linear infinite;
+}
+@keyframes scrolling-up {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, calc(-50vh * 4));
+  }
+}
+@keyframes scrolling-down {
+  0% {
+    transform: translate(0, calc(-50vh * 4));
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.marquee-item {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: var(--light-gray);
+  border: 0.2rem solid white;
+}
+.marquee-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 900px) {
+  @keyframes scrolling-up {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, calc(-40vh * 4));
+    }
+  }
+  @keyframes scrolling-down {
+    0% {
+      transform: translate(0, calc(-40vh * 4));
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  .marquee-item {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  @keyframes scrolling-up {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, calc(-20vh * 4));
+    }
+  }
+  @keyframes scrolling-down {
+    0% {
+      transform: translate(0, calc(-20vh * 4));
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  .marquee-item {
+    height: 20vh;
+  }
+}
