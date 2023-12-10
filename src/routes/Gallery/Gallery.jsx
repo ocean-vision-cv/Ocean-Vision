@@ -8,6 +8,7 @@ import "./Gallery.css";
 const Gallery = () => {
   const { t } = useTranslation();
   const eventList = {
+    "099WS":[t("099WS-event"),t("099WS-info")],
     "100FO2": [t("100FO2-event"),t("100FO2-info")],
     "101DD": [t("101DD-event"),t("101DD-info")],
     "102DOL": [t("102DOL-event"),t("102DOL-info")],
