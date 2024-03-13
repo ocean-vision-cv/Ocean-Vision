@@ -4,7 +4,6 @@ import Elida from "../../../assets/images/ElidaPio.jpg";
 import Nuno from "../../../assets/images/NunoLima.jpg";
 import ProfilePosition from "../../../assets/images/ProfilePosition.png";
 import Vitoria from "../../../assets/images/VitoriaAnthony.jpg";
-import William from "../../../assets/images/WilliamBaleno.jpg";
 import "./Team.css";
 
 const Team = () => {
@@ -64,23 +63,6 @@ const Team = () => {
             </p>
             <p className="profile-name">Élida Pio</p>
             <p className="profile-education">{t("biological")}</p>
-          </div>
-        </div>
-        <div className="profile">
-          <div className="profile-image">
-            <img src={William} alt="William" />
-          </div>
-          <div className="profile-description">
-            <p className="profile-position">
-              <img
-                className="profile-icon"
-                src={ProfilePosition}
-                alt="position"
-              />
-              {t("programmer")}
-            </p>
-            <p className="profile-name">William Baleno</p>
-            <p className="profile-education">{t("engineering")}</p>
           </div>
         </div>
       </div>
